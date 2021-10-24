@@ -1,0 +1,27 @@
+main: net.emuman.manhunt.Manhunt
+name: Manhunt
+version: 1.0-SNAPSHOT
+api-version: 1.16
+author: EmuMan
+
+commands:
+  manhunt:
+    description: Allows the organizer to start or stop the manhunt.
+    permission: manhunt.use
+    usage: /<command> <operation> [headStart]
+  hunter:
+    description: Allows the organizer to add, remove, list, or clear hunters.
+    permission: hunter.use
+    usage: /<command> <operation> [player]
+  runner:
+    description: Allows the organizer to add, remove, list, or clear runners.
+    permission: runner.use
+    usage: /<command> <operation> [player]
+
+permissions:
+  manhunt.use:
+    default: op
+  hunter.use:
+    default: op
+  runner.use:
+    default: op
